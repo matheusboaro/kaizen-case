@@ -37,13 +37,18 @@ ax.pie(sizes, explode=explode,labels = labels, autopct='%1.1f%%',shadow=True,sta
 #ax.set_title('Status das leads (Geral)',fontsize= 34)
 ax.axis('equal')
 st.pyplot(fig)
-
-
+st.text(" ")
+st.text(" ")
 st.subheader('Status das leads por vendedor')
-
+st.text(" ")
 st.pyplot(sns.catplot(y='Vendedor',kind='count',hue='Status',data=df).set_xlabels('Quantidade'))
 
-
+st.text(" ")
+st.text(" ")
+st.text(" ")
+st.text(" ")
+st.text(" ")
+st.text(" ")
 
 
 
@@ -59,8 +64,15 @@ ax2.pie(sizes, labels = labels, autopct='%1.1f%%',shadow=True,startangle=90,text
 ax2.axis('equal')
 
 st.pyplot(fig2)
-
+st.text(" ")
+st.text(" ")
+st.text(" ")
+st.text(" ")
+st.text(" ")
+st.text(" ")
 st.subheader('Objeções dos leads com status "Contatado"')
+st.text(" ")
+
 nao_concluidos = df[df['Status']=='Contatado']
 values_count = nao_concluidos['Objeção'].value_counts().tolist()
 labels = nao_concluidos['Objeção'].unique().tolist()
@@ -70,9 +82,16 @@ ax3.pie(sizes, labels = labels, autopct='%1.1f%%',shadow=True,startangle=90,text
 #ax3.set_title('Objeções dos leads',fontsize= 34)
 ax3.axis('equal')
 st.pyplot(fig3)
-
+st.text(" ")
+st.text(" ")
+st.text(" ")
+st.text(" ")
+st.text(" ")
+st.text(" ")
 
 st.header('Informações de vendedores')
+st.text(" ")
+
 status_names = df.Status.unique().tolist()
 
 option = st.selectbox('Status da negociação',['Todas']+status_names )
