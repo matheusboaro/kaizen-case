@@ -1,6 +1,4 @@
 from json import load
-from optparse import Option
-from soupsieve import select
 import streamlit as st
 import pandas as pd 
 import numpy as np 
